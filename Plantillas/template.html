@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>------------------------------------------------------APP FAMILIA ------------------------------------------------</h1>
+    <h1 style="color: blueviolet"> El apellido de la familia es: {{Apellido}}</h1>
+    <h3 style="color: black"> Esta familia esta compuesta por 4 integrantes:</h3>
+
+    <ul>
+        {% for i in NombreFamiliares %}
+            <li> {{ i }} </li>        
+        {% endfor %}
+    </ul>
+    
+    
+   
+<h3> Las edades de los integrantes son: </h3>
+<ul>
+    {% for i in Edades %}
+        <li> {{ i }} </li>        
+    {% endfor %}
+
+</ul>
+   
+</body>
+</html>
